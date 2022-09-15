@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class App {
+    static Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) throws Exception {
+
+       order();
+
+
+    }
+    static void order(){
+        System.out.println("Your purchases");
+
+        System.out.print("Order one: ");
+        String orderx = scan.nextLine();
+
+
+        System.out.print("price one: ");
+        double pricex = scan.nextDouble();
+
+
+        System.out.print("Order two: ");
+        scan.nextLine();
+
+
+        String ordery = scan.nextLine();
+        System.out.print("price two: ");
+
+        
+        double pricey = scan.nextDouble();
+        scan.nextLine();
+
+
+        System.out.print("Order three: ");
+        String orderz = scan.nextLine();
+
+        
+        System.out.print("price three: ");
+        double pricez = scan.nextDouble();
+
+
+        double total = pricex + pricey + pricez;
+        System.out.println("Your orders are: \n" + orderx + "," + ordery + "and " + orderz );
+        System.out.println("The total is: \n" + total);
+    }
+}
